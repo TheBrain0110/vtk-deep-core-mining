@@ -296,7 +296,7 @@ local function chunk_refining_recipe_maker(ore_name, refining_result, result_amo
         type = "recipe",
         name = "vtk-deepcore-mining-"..ore_name.."-chunk-refining",
         enabled = false,
-        energy_required = 5,
+        energy_required = 10,
         category = "chemistry",
         subgroup = "raw-material",
         ingredients = 
@@ -329,9 +329,9 @@ local iron_ore_chunk_refining_recipe =
 chunk_refining_recipe_maker(
     "iron-ore",             -- ore_name : used for recipe name "-chunk-refining", ingredient "-chunk", refining icon "-chunk-refining.png")
     "iron-ore",             -- result
-    200,                    -- result amount
+    80,                    -- result amount
     sulfuricacidname,        -- refining liquid
-    50                      -- refining liquid amount
+    100                      -- refining liquid amount
                             -- TODO tint to implement
     -- {r = 0.700, g = 0.130, b = 0.180, a = 0.357}, -- steel blue #4682B4
 )
@@ -339,36 +339,36 @@ local copper_ore_chunk_refining_recipe =
 chunk_refining_recipe_maker(
     "copper-ore", 
     "copper-ore", 
-    100, 
+    80, 
     sulfuricacidname, 
-    50 
+    100 
     -- {r = 0.255, g = 0.165, b = 0.000, a = 0.357}, -- orange	#FFA500	rgb(255,165,0)
 )
 local coal_chunk_refining_recipe = 
 chunk_refining_recipe_maker(
     "coal", 
     "coal", 
-    100, 
+    80, 
     sulfuricacidname, 
-    10 
+    100 
     -- {r = 0.105, g = 0.105, b = 0.105, a = 0.357}, -- dimgray / dimgray	#696969	rgb(105,105,105)
 )
 local stone_chunk_refining_recipe = 
 chunk_refining_recipe_maker(
     "stone", 
     "stone", 
-    100, 
+    80, 
     sulfuricacidname, 
-    10 
+    100 
     -- {r = 0.244, g = 0.164, b = 0.096, a = 0.357}, -- sandybrown	#F4A460	rgb(244,164,96)
 )
 local uranium_ore_chunk_refining_recipe = 
 chunk_refining_recipe_maker(
     "uranium-ore", 
     "uranium-ore",
-    100,  
+    8,  
     sulfuricacidname, 
-    100 
+    1000 
     -- {r = 0.173, g = 0.255, b = 0.047, a = 0.357}, -- greenyellow	#ADFF2F	rgb(173,255,47)
 )
 data:extend({
@@ -485,12 +485,12 @@ data:extend({
             }
         },
         
-        energy_usage = "1MW",
+        energy_usage = "2MW",
         energy_source =
         {
             type = "electric",
             -- will produce this much * energy pollution units per tick
-            emissions = 0.15,
+            emissions = 0.025,
             usage_priority = "secondary-input",
         },
         vector_to_place_result = {-2, 3},
@@ -660,12 +660,12 @@ data:extend({
             }
         },
         
-        energy_usage = "10MW",
+        energy_usage = "20MW",
         energy_source =
         {
             type = "electric",
             -- will produce this much * energy pollution units per tick
-            emissions = 0.15,
+            emissions = 0.01,
             usage_priority = "secondary-input",
         },
         vector_to_place_result = {0, 5},

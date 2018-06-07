@@ -108,7 +108,7 @@ local function resource_patch_maker(ore_name, ore_patch_name, hardnessparam, min
     minable =
     {
       hardness = hardnessparam,
-      mining_time = miningtime,
+      mining_time = miningtime * 60,
       results =
       {
         {
@@ -119,7 +119,7 @@ local function resource_patch_maker(ore_name, ore_patch_name, hardnessparam, min
           probability = 1
         }
       },
-      fluid_amount = 100,
+      fluid_amount = 1000,
       required_fluid = sulfuricacidname
     }
   }
@@ -142,7 +142,7 @@ local function resource_patch_maker(ore_name, ore_patch_name, hardnessparam, min
     minable =
     {
       hardness = hardnessparam, 
-      mining_time = miningtime,
+      mining_time = miningtime * 60,
       mining_particle = miningparticle,
       results =
       {
@@ -229,7 +229,7 @@ end
 
 local copper_ore_patch = 
 resource_patch_maker(
-  "copper-ore", 
+  "vtk-deepcore-mining-copper-ore-chunk", 
   "copper-ore-patch", 
   data.raw.resource["copper-ore"].minable.hardness,         -- hardnessparam
   data.raw.resource["copper-ore"].minable.mining_time,      -- miningtime
@@ -240,7 +240,7 @@ resource_patch_maker(
 
 local iron_ore_patch = 
 resource_patch_maker(
-  "iron-ore", 
+  "vtk-deepcore-mining-iron-ore-chunk", 
   "iron-ore-patch", 
   data.raw.resource["iron-ore"].minable.hardness, 
   data.raw.resource["iron-ore"].minable.mining_time, 
@@ -251,7 +251,7 @@ resource_patch_maker(
 
 local coal_patch = 
 resource_patch_maker(
-  "coal", 
+  "vtk-deepcore-mining-coal-chunk", 
   "coal-patch", 
   data.raw.resource["coal"].minable.hardness, 
   data.raw.resource["coal"].minable.mining_time, 
@@ -262,7 +262,7 @@ resource_patch_maker(
 
 local stone_patch = 
 resource_patch_maker(
-  "stone",
+  "vtk-deepcore-mining-stone-chunk",
   "stone-patch",
   data.raw.resource["stone"].minable.hardness, 
   data.raw.resource["stone"].minable.mining_time, 
@@ -273,7 +273,7 @@ resource_patch_maker(
 
 local uranium_ore_patch = 
 resource_patch_maker(
-  "uranium-ore", 
+  "vtk-deepcore-mining-uranium-ore-chunk", 
   "uranium-ore-patch", 
   data.raw.resource["uranium-ore"].minable.hardness, 
   data.raw.resource["uranium-ore"].minable.mining_time, 
