@@ -135,8 +135,9 @@ local function resource_patch_maker(ore_name, ore_patch_name, hardnessparam, min
     order = "a-b-a",
     infinite = true,
     highlight = true,
-    infinite_depletion_resource_amount = 0,
-    minimum = 10000,
+  --infinite_depletion_resource_amount = 1000, -- Wrong tag?
+    infinite_depletion_amount = 1,
+    minimum = 2500,
     normal = 10000,
     resource_patch_search_radius = 20,
     minable =
