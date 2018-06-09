@@ -329,7 +329,7 @@ local iron_ore_chunk_refining_recipe =
 chunk_refining_recipe_maker(
     "iron-ore",             -- ore_name : used for recipe name "-chunk-refining", ingredient "-chunk", refining icon "-chunk-refining.png")
     "iron-ore",             -- result
-    80,                    -- result amount
+    64,                    -- result amount
     sulfuricacidname,        -- refining liquid
     100                      -- refining liquid amount
                             -- TODO tint to implement
@@ -339,7 +339,7 @@ local copper_ore_chunk_refining_recipe =
 chunk_refining_recipe_maker(
     "copper-ore", 
     "copper-ore", 
-    80, 
+    60, 
     sulfuricacidname, 
     100 
     -- {r = 0.255, g = 0.165, b = 0.000, a = 0.357}, -- orange	#FFA500	rgb(255,165,0)
@@ -348,7 +348,7 @@ local coal_chunk_refining_recipe =
 chunk_refining_recipe_maker(
     "coal", 
     "coal", 
-    80, 
+    40, 
     sulfuricacidname, 
     100 
     -- {r = 0.105, g = 0.105, b = 0.105, a = 0.357}, -- dimgray / dimgray	#696969	rgb(105,105,105)
@@ -357,7 +357,7 @@ local stone_chunk_refining_recipe =
 chunk_refining_recipe_maker(
     "stone", 
     "stone", 
-    80, 
+    40, 
     sulfuricacidname, 
     100 
     -- {r = 0.244, g = 0.164, b = 0.096, a = 0.357}, -- sandybrown	#F4A460	rgb(244,164,96)
@@ -485,12 +485,12 @@ data:extend({
             }
         },
         
-        energy_usage = "2MW",
+        energy_usage = "2.5MW",
         energy_source =
         {
             type = "electric",
             -- will produce this much * energy pollution units per tick
-            emissions = 0.025,
+            emissions = 0.05,
             usage_priority = "secondary-input",
         },
         vector_to_place_result = {-2, 3},
@@ -660,12 +660,12 @@ data:extend({
             }
         },
         
-        energy_usage = "20MW",
+        energy_usage = "25MW",
         energy_source =
         {
             type = "electric",
             -- will produce this much * energy pollution units per tick
-            emissions = 0.01,
+            emissions = 0.025,
             usage_priority = "secondary-input",
         },
         vector_to_place_result = {0, 5},
