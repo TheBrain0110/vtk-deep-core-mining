@@ -261,28 +261,33 @@ data:extend({
         {
             {
                 name = "vtk-deepcore-mining-iron-ore-chunk",
-                probability = 0.30,
-                amount = 10
+                probability = 0.5,
+                amount_min = 3,
+                amount_max = 10
             },
             {
                 name = "vtk-deepcore-mining-copper-ore-chunk",
-                probability = 0.30,
-                amount = 10
+                probability = 0.5,
+                amount_min = 3,
+                amount_max = 10
             },
             {
                 name = "vtk-deepcore-mining-coal-chunk",
-                probability = 0.15,
-                amount = 10
+                probability = 0.4,
+                amount_min = 1,
+                amount_max = 5
             },
             {
                 name = "vtk-deepcore-mining-stone-chunk",
-                probability = 0.15,
-                amount = 10
+                probability = 0.4,
+                amount_min = 1,
+                amount_max = 5
             },
             {
                 name = "vtk-deepcore-mining-uranium-ore-chunk",
-                probability = 0.10,
-                amount = 10
+                probability = 0.1,
+                amount_min = 1,
+                amount_max = 3
             },
         },
         allow_decomposition = false
@@ -640,7 +645,7 @@ data:extend({
         vehicle_impact_sound =    { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
         
         mining_speed = 1,
-        mining_power = 60,
+        mining_power = 50,
         resource_searching_radius = 0.49,
         
         rotatable = false,
