@@ -59,7 +59,7 @@ local deep_core_ore = {
         amount_max = 1,
       }, 
     },
-    fluid_amount = 20,
+    fluid_amount = 50,
     required_fluid = "heavy-oil"
   },
   --[[

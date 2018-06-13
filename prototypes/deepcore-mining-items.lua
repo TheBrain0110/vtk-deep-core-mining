@@ -262,14 +262,14 @@ data:extend({
             {
                 name = "vtk-deepcore-mining-iron-ore-chunk",
                 probability = 0.5,
-                amount_min = 3,
-                amount_max = 10
+                amount_min = 2,
+                amount_max = 6
             },
             {
                 name = "vtk-deepcore-mining-copper-ore-chunk",
                 probability = 0.5,
-                amount_min = 3,
-                amount_max = 10
+                amount_min = 2,
+                amount_max = 6
             },
             {
                 name = "vtk-deepcore-mining-coal-chunk",
@@ -285,9 +285,9 @@ data:extend({
             },
             {
                 name = "vtk-deepcore-mining-uranium-ore-chunk",
-                probability = 0.1,
+                probability = 0.25,
                 amount_min = 1,
-                amount_max = 3
+                amount_max = 5
             },
         },
         allow_decomposition = false
