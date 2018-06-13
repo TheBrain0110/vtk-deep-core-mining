@@ -59,8 +59,8 @@ local deep_core_ore = {
         amount_max = 1,
       }, 
     },
-    fluid_amount = 100,
-    required_fluid = sulfuricacidname
+    fluid_amount = 20,
+    required_fluid = "heavy-oil"
   },
   --[[
   autoplace =
